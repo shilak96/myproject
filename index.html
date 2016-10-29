@@ -1,12 +1,10 @@
-<html>
-	<head>
-		<title>index</title>
-	</head>
-
-	<body>
-		<h1>Index</h1>
-		<a href="about/aboutme.html">������ ������.html</a>
-		<br>
-		<a href="http://localhost:8000/about/aboutme.html">���������� ������</a>
-	</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block content %}
+  <p>
+    <a href="http://localhost:8000/about/aboutme.html">
+      Absolute link to AboutMe
+    </a>
+  </p>
+  <p><a href="about/aboutme.html">Relative link to AboutMe</a></p>
+{% endblock %}
